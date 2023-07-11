@@ -5,7 +5,9 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 }
 
 .banner {
@@ -44,3 +46,161 @@ main {
     width: 100%;
 }
 
+
+/* ---------------
+news style start 
+-------------*/
+
+
+
+
+.news {
+    width: 77%;
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 20px;
+}
+
+.option-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0 30px;
+    border-radius: 10px;
+    height: 250px;
+}
+.option-container button {
+    
+    margin-bottom: 30px;
+    padding: 15px 0;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+
+}
+.option-container a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+.option-container a:hover {
+    color: white;
+    background-color: red;
+
+}
+
+.option-container a:focus{
+    color: white;
+    background-color: red;
+}
+
+/*--------------
+ Article  
+ -----------------*/
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.transfer-btn button{
+    margin-top: 15px;
+    padding: 5px 20px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+article div img {
+    width: 100%;
+}
+
+article h4 {
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------
+ Article   finished
+ -----------------*/
+
+
+
+ /*---------------
+ - upcoming match start 
+ -------------------- */
+
+ 
+
+ .upcoming-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 40px;
+
+ }
+
+ .match-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 5px;
+ }
+.flags{
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: center;     */
+}
+.flags h3 {
+    padding: 0 10px;
+}
+.flags img {
+    width: 40%;
+    height: 60%;
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: black;
+    color: rgba(196, 196, 196, 0.692);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer div{
+    text-align: center;
+    
+}
+
+hr {
+    border: 1px solid gray;
+    margin-bottom: 50px;
+}
+
+footer div a{
+    
+    text-decoration: none;
+    color: rgba(141, 134, 134, 0.74);
+    margin: 0 50px;
+}
